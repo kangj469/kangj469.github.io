@@ -1,0 +1,24 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.sectionhead {
+  font-size: 18pt;
+}
+
+.studio {
+  float: left;
+  font-size: 15pt;
+}
+
+.lab {
+  float: right;
+  font-size: 15pt;
+}
+
+
+
+a:link {
+  text-decoration: none;
+}
