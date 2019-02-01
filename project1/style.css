@@ -1,6 +1,61 @@
 .dialogue {
-font-family: omnes-pro, sans-serif;
+margin: 0 auto;
+width: 900px;
+height: 2000px;
+font-family: omnes-semicond, sans-serif;
 font-style: normal;
-font-weight: 600;
+font-weight: 500;
+font-size: 20pt;
 color: white;
+line-height: ;
+}
+
+.woody {
+  color:#FFA14F;
+  float: left;
+  position:relative;
+}
+
+.buzz {
+  color:#D09EE8;
+  float: right;
+  position: relative;
+}
+
+.psst {
+  font-size: 40pt;
+  font-weight: 600;
+}
+
+.getoverhere {
+  font-family: omnes-semicond, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.dotdotdot {
+  position: relative;
+  right: 325px;
+  top: 160px;
+  font-size: 30pt;
+}
+
+.comeon {
+  position: relative;
+  left: 120px;
+}
+
+.icant {
+  position: relative;
+  right: 310px;
+}
+
+.whysure {
+  position: relative;
+  left: 315px;
+}
+
+.andys {
+  position: relative;
+  right: 350px;
 }
