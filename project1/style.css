@@ -40,9 +40,16 @@ line-height: ;
   font-size: 30pt;
 }
 
+.oh {
+  font-family: omnes-semicond, sans-serif;
+  font-style: italic;
+  font-size: 25pt;
+}
+
 .comeon {
   position: relative;
-  left: 120px;
+  left: 70px;
+  top:-10px;
 }
 
 .icant {
@@ -52,10 +59,15 @@ line-height: ;
 
 .whysure {
   position: relative;
-  left: 315px;
+  right: 205px;
 }
 
 .andys {
   position: relative;
-  right: 350px;
+  right: 206px;
+}
+
+.whats {
+  font-family: omnes-pro, sans-serif;
+  font-size: 30pt;
 }
