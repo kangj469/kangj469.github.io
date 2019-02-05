@@ -1,73 +1,140 @@
-.dialogue {
+.wrapper {
 margin: 0 auto;
 width: 900px;
-height: 2000px;
-font-family: omnes-semicond, sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 20pt;
-color: white;
-line-height: ;
+height: 5000px;
 }
 
 .woody {
   color:#FFA14F;
   float: left;
   position:relative;
+  font-family: kautiva-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20pt;
 }
 
 .buzz {
   color:#D09EE8;
   float: right;
   position: relative;
+  font-family: bc-alphapipe, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20pt;
 }
 
 .psst {
-  font-size: 40pt;
+  font-size: 65pt;
   font-weight: 600;
 }
 
 .getoverhere {
-  font-family: omnes-semicond, sans-serif;
+  font-family: kautiva-pro, sans-serif;
   font-style: italic;
   font-weight: 400;
+  font-size: 20pt;
 }
 
 .dotdotdot {
   position: relative;
-  right: 325px;
-  top: 160px;
-  font-size: 30pt;
+  right: 320px;
+  top: 200px;
+  font-size: 40pt;
+  font-weight: 600;
 }
 
 .oh {
-  font-family: omnes-semicond, sans-serif;
+  position: relative;
+  left: 300px;
+  top:230px;
+  font-family: kautiva-pro, sans-serif;
   font-style: italic;
-  font-size: 25pt;
+  font-weight: 400;
+  font-size: 30pt;
 }
 
-.comeon {
+.cantdothis {
   position: relative;
-  left: 70px;
-  top:-10px;
+  left: 300px;
+  top:230px;  
+}
+
+.needyourhelp {
+  position: relative;
+  left: 300px;
+  top:230px;  
 }
 
 .icant {
   position: relative;
-  right: 310px;
+  right: 90px;
+  top:280px;
 }
 
 .whysure {
   position: relative;
-  right: 205px;
+  left: 205px;
+  top: 285px;
 }
 
 .andys {
   position: relative;
-  right: 206px;
+  top: 280px;
+  left: 230px;
 }
 
 .whats {
-  font-family: omnes-pro, sans-serif;
-  font-size: 30pt;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35pt;
+  position: relative;
+  top: 320px;
+  right: 120px;
+}
+
+.bigfall {
+  position: relative;
+  left: 100px;
+  top:400px; 
+  font-size: 28pt; 
+}
+
+.nowoody {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25pt;
+  position: relative;
+  left: 290px;
+  top:420px; 
+}
+
+.forthefirst {
+  text-align: right;
+  position: relative;
+  right: 330px;
+  top:440px; 
+}  
+
+.stupid {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 35pt;
+  position: relative;
+  top: 250px;
+  right: 50px;
+}
+
+.whoa {
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+}
+
+.wait {
+
+}
+
+.being {
+
 }
