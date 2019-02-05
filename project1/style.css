@@ -126,15 +126,23 @@ height: 5000px;
 }
 
 .whoa {
-  -webkit-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  -o-transform: rotate(15deg);
+  position: relative;
+  top: 320px;
+  left: 680px;
+  font-size: 30pt;
+  transform: rotate(10deg);
 }
 
 .wait {
-
+  position: relative;
+  top: 280px;
+  left: 680px;
 }
 
 .being {
-
+  position: relative;
+  top: 300px;
+  left: 10px;
+  font-size: 30pt;
+  font-weight: 700;
 }
