@@ -1,0 +1,41 @@
+.name {
+  margin-top: 100px;
+  text-align: center;
+  font-family: omnes-pro, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50pt;
+  color: grey;
+}
+
+.wrapper {
+    margin: 40px auto 0px;
+    width: 400px;
+    height: 700px;
+}
+
+.top, .middle, .bottom {
+  width: 400px;
+  height: 200px;
+  font-family: omnes-semicond, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30pt;
+  color:white;
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  font-family: omnes-semicond, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20pt;
+  color: grey;
+  margin-right: 100px;
+  margin-left: 100px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: black;
+  padding: 10px;
+}
