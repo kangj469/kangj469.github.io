@@ -1,11 +1,16 @@
+body {
+  margin:0px;
+}
+
 #background {
-  background: linear-gradient(to bottom, #5284BA 0%, #273F59 50%)
+  background: linear-gradient(to bottom, #5284BA 0%, #273F59 50%);
 }
 
 .wrapper {
-margin: 0 auto;
+margin: 0px auto;
 width: 900px;
 height: 5000px;
+padding-top: 150px;
 }
 
 .woody {
