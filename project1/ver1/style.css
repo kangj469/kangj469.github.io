@@ -1,5 +1,8 @@
 body {
   margin:0px;
+}
+
+#background {
   background: linear-gradient(to bottom, #5284BA 0%, #273F59 50%);
 }
 
@@ -18,7 +21,6 @@ padding-top: 150px;
   font-style: normal;
   font-weight: 400;
   font-size: 20pt;
-  cursor: url(woody.png) 4 12, auto;
 }
 
 .buzz {
@@ -29,51 +31,12 @@ padding-top: 150px;
   font-style: normal;
   font-weight: 400;
   font-size: 20pt;
-  cursor: url(buzz.png) 4 12, auto;
 }
 
 .psst {
   transform: rotate(10deg);
   font-size: 70pt;
   font-weight: 600;
-}
-
-@-webkit-keyframes psst {
-  16.65% {
-    -webkit-transform: translate(8px, -8px);
-    transform: translate(8px, -8px);
-  }
-  33.3% {
-    -webkit-transform: translate(-6px, 6px);
-    transform: translate(-6px, 6px);
-  }
-  49.95% {
-    -webkit-transform: translate(4px, -4px);
-    transform: translate(4px, -4px);
-  }
-  66.6% {
-    -webkit-transform: translate(-2px, 2px);
-    transform: translate(-2px, 2px);
-  }
-  83.25% {
-    -webkit-transform: translate(1px, -1px);
-    transform: translate(1px, -1px);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-
-.psst:hover, .psst:focus, .psst:active {
-  -webkit-animation-name: psst;
-  animation-name: psst;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
 }
 
 .getoverhere {
@@ -94,53 +57,14 @@ padding-top: 150px;
 }
 
 .oh {
-  position: absolute;
-  white-space: nowrap;
+  position: relative;
   left: 300px;
   top:230px;
   font-family: kautiva-pro, sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 30pt;
-  line-height: 0.5em;
-}
-
-@-webkit-keyframes oh {
-  16.65% {
-    -webkit-transform: skew(-12deg);
-    transform: skew(-12deg);
-  }
-  33.3% {
-    -webkit-transform: skew(10deg);
-    transform: skew(10deg);
-  }
-  49.95% {
-    -webkit-transform: skew(-6deg);
-    transform: skew(-6deg);
-  }
-  66.6% {
-    -webkit-transform: skew(4deg);
-    transform: skew(4deg);
-  }
-  83.25% {
-    -webkit-transform: skew(-2deg);
-    transform: skew(-2deg);
-  }
-  100% {
-    -webkit-transform: skew(0);
-    transform: skew(0);
-  }
-}
-
-.oh:hover, .oh:focus, .oh:active {
-  -webkit-animation-name: oh;
-  animation-name: oh;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  line-height: 1.5em;
 }
 
 .cantdothis {
@@ -183,13 +107,6 @@ padding-top: 150px;
   position: relative;
   top: 350px;
   right: 120px;
-}
-
-.whats:hover, .whats:focus, .whats:active {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .bigfall {
