@@ -1,0 +1,14 @@
+body {
+font-family: rubrik-edge-new, sans-serif;
+font-style: normal;
+font-weight: 400;
+text-align: center;
+background-color: #D1B8FF;
+margin: 0px;
+}
+
+.list {
+  text-align: center;
+  font-size: 20pt;
+  margin: 0 auto;
+}
