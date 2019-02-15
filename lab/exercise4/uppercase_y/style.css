@@ -12,12 +12,12 @@
 
 #y-1 {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  border-right: 60px solid black;
-  border-top: 60px solid transparent;
-  border-left: 60px solid black;
-  border-bottom: 60px solid black;
+  width: 150px;
+  height: 150px;
+  border-right: 30px solid black;
+  border-top: 30px solid transparent;
+  border-left: 30px solid black;
+  border-bottom: 30px solid black;
   border-top-left-radius: 160px;
   border-top-right-radius: 160px;
   border-bottom-left-radius: 160px;
@@ -28,8 +28,8 @@
 #y-2 { 
   position: absolute;
   top: 200px;
-  left: 80px;
-  width: 60px;
+  left: 90px;
+  width: 30px;
   height: 200px;
   background-color: black;
 }
