@@ -1,57 +1,24 @@
-/*title and intro*/
-
-.normal {
-  position:relative;
-  text-align: center;
-  font-family: omnes-semicond, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 100pt;
-  color: white;
-}
-
-.hover {
-  position: relative;
+#intro {
   text-align: center;
   font-family: omnes-semicond, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15pt;
+  font-size: 10pt;
   color: white;
-  top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-
-.hoverable {
-  cursor:default;
-  color:#fff;
-  text-decoration: none;
-}
-
-.hoverable .hover {
-  display: none;
-}
-
-.hoverable:hover .normal {
-  display: none;
-}
-
-.hoverable:hover .hover {
-  display: inline;
-}
-
-
-/*content*/
 
 body {
-  margin:50px;
+  margin:0px;
   background: linear-gradient(to bottom, #5284BA 0%, #273F59 50%);
 }
 
 .wrapper {
 margin: 0px auto;
 width: 900px;
-height: 4000px;
-padding-top: 300px;
+height: 4300px;
+padding-top: 150px;
 }
 
 .woody {
@@ -357,13 +324,4 @@ padding-top: 300px;
   font-size: 50pt;
   font-style: bold;
   color: lightgrey;
-}
-
-footer {
-  text-align: center;
-  font-family: omnes-semicond, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15pt;
-  color: white;
 }
