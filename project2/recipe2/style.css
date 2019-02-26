@@ -1,0 +1,40 @@
+body {
+font-family: miller-text, serif;
+font-style: normal;
+font-weight: 700;
+font-size: 10em;
+color: #453423;
+text-align: center;
+background-color: #E8CC8E;
+margin: 0px;
+padding: 1em 1em 1em 1.5em;
+}
+
+.sidenav {
+  font-family: miller-text, serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #40382B;
+  overflow-x: hidden;
+  padding-top: 30px;
+  line-height: 0.5em;
+  text-align: right;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #E8CC8E;
+}
