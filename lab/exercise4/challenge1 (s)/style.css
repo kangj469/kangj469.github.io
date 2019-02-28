@@ -1,0 +1,55 @@
+#wrapper {
+  width:25vw;
+  height:40vh;
+  border: 1px solid transparent;
+  margin: 0 auto;
+}
+
+#uppercase-s {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  margin: 0 auto;
+}
+
+#s-1 {
+  position: absolute;
+  width: 45%;
+  height: 35%;
+  background-color: transparent;
+  border-top:  30px solid black;
+  border-left: 30px solid black;
+  border-bottom: 30px solid black;
+  border-radius: 80px 0px 0px 80px;
+}
+
+#s-2 {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: 40%;
+  background-color: transparent;
+  border-top:  30px solid black;
+}
+
+#s-3 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 40%;
+  height: 35%;
+  background-color: transparent;
+  border-top: 30px solid black;
+  border-right: 30px solid black;
+  border-bottom: 30px solid black;
+  border-radius: 0px 80px 80px 0px;
+}
+
+#s-4 {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 40%;
+  background-color: transparent;
+  border-bottom: 30px solid black;
+}
