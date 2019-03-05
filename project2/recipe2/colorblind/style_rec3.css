@@ -5,9 +5,9 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 10em;
-  color: #453423;
+  color: #CD7D62;
   text-align: center;
-  background-color: #E8CC8E;
+  background-color: #EBBF80;
   margin: 0px;
 
 }
@@ -20,7 +20,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #40382B;
+  background-color: #D1CE89;
   overflow-x:hidden;
   line-height: 0.5em;
   display: flex;
@@ -57,7 +57,7 @@ body {
 
 #one {
   top: 250px;
-  background-color: #40382B;
+  background-color: #E8CC8E;
   position: absolute; /* Position them relative to the browser window */
   left: -110px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
@@ -71,7 +71,7 @@ body {
 
 #two {
   top: 310px;
-  background-color: #40382B; 
+  background-color: #E8CC8E; 
   position: absolute; /* Position them relative to the browser window */
   left: -110px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
@@ -85,7 +85,7 @@ body {
 
 #three {
   top: 370px;
-  background-color: #40382B;
+  background-color: #E8CC8E;
   position: absolute; /* Position them relative to the browser window */
   left: 0px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
@@ -99,7 +99,7 @@ body {
 
 #four {
   top: 430px;
-  background-color: #40382B;
+  background-color: #E8CC8E;
   position: absolute; /* Position them relative to the browser window */
   left: -110px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
@@ -113,7 +113,7 @@ body {
 
 #five {
   top: 490px;
-  background-color: #40382B;
+  background-color: #E8CC8E;
   position: absolute; /* Position them relative to the browser window */
   left: -110px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
@@ -127,7 +127,7 @@ body {
 
 #startover {
   top: 550px;
-  background-color: #40382B;
+  background-color: #E8CC8E;
   position: absolute; /* Position them relative to the browser window */
   left: -110px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
@@ -147,5 +147,5 @@ body {
 }
 
 .repeat a:hover {
-  color: #40382B;
+  color: #E8CC8E;
 }

@@ -5,9 +5,9 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 10em;
-  color: #453423;
+  color: #CD7D62;
   text-align: center;
-  background-color: #E8CC8E;
+  background-color: #EBBF80;
   margin: 0px;
   padding: 1em 1em 1em 1em;
 }
@@ -20,7 +20,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #40382B;
+  background-color: #D1CE89;
   overflow-x:hidden;
   line-height: 0.5em;
   display: flex;
