@@ -5,60 +5,20 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 10em;
-  color: #453423;
-  text-align: center;
-  background-color: #E8CC8E;
+  background-color: white;
   margin: 0px;
-
 }
 
-.sidenav {
-  font-family: ibm-plex-mono, sans-serif;
-  font-weight: 100;
-  height: 80px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #40382B;
-  overflow-x:hidden;
-  line-height: 0.5em;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  letter-spacing: 1.5pt;
-  z-index: 5;
-}
-
-.sidenav a {
-  text-decoration: none;
-  font-size: 25px;
-  color: #fff;
-  display: inline;
-}
-
-.sidenav a:hover {
-  color: #E8CC8E;
-}
 
 /*setting*/
 
 .list {
   font-size: 15pt;
   text-align: left;
-  display: flex;
-  justify-content: space-around;
   position: relative;
-  top: 200px;
+  top: 150px;
 }
 
-.left {
-  float: left
-}
-
-.right {
-  float: right
-}
 
 .container {
   display: block;
@@ -89,7 +49,7 @@ body {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #40382B;
+  background-color: black;
 }
 
 /* On mouse-over, add a grey background color */
@@ -97,10 +57,11 @@ body {
   background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* When the checkbox is checked, add a red background */
 .container input:checked ~ .checkmark {
-  background-color: #E8CC8E;
+  background-color: red;
 }
+
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {

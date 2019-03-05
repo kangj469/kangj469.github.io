@@ -1,0 +1,20 @@
+body {
+  font-family: ibm-plex-mono, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12pt;
+  background-color: white;
+  margin: 100px 0px 0px 0px;
+  text-align: center;
+}
+
+#countdown {
+  color: red; 
+  font-family: serif;
+  font-size: 50px;
+  width: 20%;
+  height: 100px;
+  position: absolute;
+  left: 80px;
+  top: 10px;
+}
