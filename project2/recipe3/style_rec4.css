@@ -44,8 +44,8 @@ body {
 /*setting*/
 
 .recipe {
-  font-size: 0.15em;
-  padding: 15em;
+  font-size: 16pt;
+  padding: 11em 15em 15em 15em;
 }
 
 
@@ -54,11 +54,12 @@ body {
   left: 0; /* On mouse-over, make the elements appear as they should */
 }
 
+
 #one {
   top: 250px;
   background-color: #40382B;
   position: absolute; /* Position them relative to the browser window */
-  left: 0px; /* Position them outside of the screen */
+  left: -110px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
   padding: 15px; /* 15px padding */
   width: 150px; /* Set a specific width */
@@ -100,7 +101,7 @@ body {
   top: 430px;
   background-color: #40382B;
   position: absolute; /* Position them relative to the browser window */
-  left: -110px; /* Position them outside of the screen */
+  left: 0px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
   padding: 15px; /* 15px padding */
   width: 150px; /* Set a specific width */

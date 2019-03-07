@@ -9,6 +9,7 @@ body {
   padding: 1em 1em 1em 1em;
 }
 
+/*sidenav*/
 .sidenav {
   text-transform: uppercase;
   font-weight: 100;
@@ -19,7 +20,7 @@ body {
   top: 0;
   left: 0;
   background-color: #40382B;
-  overflow-x:hidden;
+  overflow-x: hidden;
   line-height: 0.5em;
   display: flex;
   justify-content: space-around;
@@ -30,7 +31,7 @@ body {
 
 .sidenav a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 0.2em;
   color: #fff;
   display: inline;
 }
@@ -39,11 +40,34 @@ body {
   color: #E8CC8E;
 }
 
-/*setting*/
+/*nextprevbutton*/
+
+.nextround {
+  font-size: 4em;
+  background-color: #40382B;
+  color: white;
+  border-radius: 10%;
+  position: fixed;
+  text-decoration: none;
+  padding: 0px 10px 10px 10px;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+}
+
+.nextround a:hover {
+  color: #E8CC8E;
+} /*not workinggggggg*/
+
+
+/*content*/
+
 .title {
   position: absolute;
   z-index: 1;
-  font-size: 15vw;
+  font-weight: 300;
+  font-size: 10em;
+  padding: 15% 15% 15% 15%;
 }
 
 .pic {
@@ -53,15 +77,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.6;
+  opacity: 0.4;
   padding-top: 80px;
+  margin: 10% 10% 0% 5%;
 }
 
 .explain {
-  font-size: 16pt;
+  font-size: 1.5em;
   line-height: 2em;
   z-index: 1;
-  top: 700px;
+  top: 600px;
   position: absolute;
   margin: 0 20% 0 10%;
 }

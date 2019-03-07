@@ -1,0 +1,87 @@
+/*setting*/
+
+body {
+  font-family: ibm-plex-mono, sans-serif;
+  color: #453423;
+  text-align: center;
+  background-color: #E8CC8E;
+  margin: 0px;
+}
+
+/*sidenav*/
+.sidenav {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 10em;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #40382B;
+  overflow-x: hidden;
+  line-height: 0.5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  letter-spacing: 0.02em;
+  z-index: 5;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 0.2em;
+  color: #fff;
+  display: inline;
+}
+
+.sidenav a:hover {
+  color: #E8CC8E;
+}
+
+/*nextprevbutton*/
+.nextround {
+  font-size: 4em;
+  background-color: #40382B;
+  color: white;
+  border-radius: 10%;
+  position: fixed;
+  text-decoration: none;
+  padding: 0px 10px 10px 10px;
+  top: 50%;
+  right: 0;
+}
+
+.prevround {
+  font-size: 4em;
+  background-color: #40382B;
+  color: white;
+  border-radius: 10%;
+  position: fixed;
+  text-decoration: none;
+  padding: 0px 10px 10px 10px;
+  top: 50%;
+  left: 0;
+  z-index: 10;
+}
+
+.nextround .prevround a:hover {
+  color: #E8CC8E;
+} /*not workinggggggg*/
+
+
+/*content*/
+
+.recipe {
+  font-size: 1.5em;
+  padding: 15em;
+  color: #40382B;
+}
+
+/*steps*/
+
+.stepbutton {
+  background-color: #40382B;
+  border-radius: 50%;
+  font-size: 1em;
+}
