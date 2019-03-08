@@ -65,23 +65,65 @@ body {
   z-index: 10;
 }
 
-.nextround .prevround a:hover {
+.nextprev a:hover {
   color: #E8CC8E;
-} /*not workinggggggg*/
+}
 
 
 /*content*/
 
 .recipe {
   font-size: 1.5em;
-  padding: 15em;
+  padding: 11em;
   color: #40382B;
 }
 
 /*steps*/
 
-.stepbutton {
+.steps {
   background-color: #40382B;
-  border-radius: 50%;
-  font-size: 1em;
+  border: none;
+  color: white;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
+  position: relative;
+  top: 170px;
+}
+
+.steps a:hover {
+  color: #E8CC8E;
+}
+
+.steps a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.again {
+  background-color: #40382B;
+  border: none;
+  color: white;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
+  position: relative;
+  top: 170px;
+}
+
+.again a:hover {
+  color: #E8CC8E;
+}
+
+.again a{
+  text-decoration: none;
+  color: #fff;
 }

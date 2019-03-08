@@ -55,18 +55,18 @@ body {
   z-index: 10;
 }
 
-.nextround a:hover {
+.nextprev a:hover {
   color: #E8CC8E;
-} /*not workinggggggg*/
+}
 
 
 /*content*/
 
 .title {
-  position: absolute;
+  position: relative;
   z-index: 1;
   font-weight: 300;
-  font-size: 10em;
+  font-size: calc(7vw + 7vh + 2vmin);
   padding: 15% 15% 15% 15%;
 }
 
@@ -76,9 +76,9 @@ body {
   z-index: -1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  top:0;
   opacity: 0.4;
-  padding-top: 80px;
+  padding-top: 100px;
   margin: 10% 10% 0% 5%;
 }
 
@@ -86,8 +86,8 @@ body {
   font-size: 1.5em;
   line-height: 2em;
   z-index: 1;
-  top: 600px;
-  position: absolute;
-  margin: 0 20% 0 10%;
+  top: px;
+  position: relative;
+  margin: 0 20% 0 15%;
 }
 

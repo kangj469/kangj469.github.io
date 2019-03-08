@@ -65,9 +65,9 @@ body {
   z-index: 10;
 }
 
-.nextround .prevround a:hover {
+.nextprev a:hover {
   color: #E8CC8E;
-} /*not workinggggggg*/
+}
 
 
 /*content*/
