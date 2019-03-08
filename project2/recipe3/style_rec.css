@@ -39,6 +39,41 @@ body {
   color: #E8CC8E;
 }
 
+/*dropdown*/
+
+.sidenav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .sidenav a:not(:last-child), .dropdown {
+    display: none;
+  }
+  .sidenav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidenav.responsive {position: relative;}
+  .sidenav.responsive .icon {
+    position: absolute;
+  }
+  .sidenav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .sidenav.responsive .dropdown {float: none;}
+  .sidenav.responsive {position: relative;}
+  .sidenav.responsive .dropdown  {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
 /*nextprevbutton*/
 .nextround {
   font-size: 4em;
