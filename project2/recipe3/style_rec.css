@@ -74,10 +74,17 @@ body {
 
 .recipe {
   font-size: 1.5em;
-  padding: 11em;
+  padding-top: 250px;
+  padding-right: 27%;
+  padding-left:27%;
   color: #40382B;
+  float: left;
+  line-height: 2em;
 }
 
+.ingre {
+  background-color: #DDCFBB;
+}
 /*steps*/
 
 .steps {
