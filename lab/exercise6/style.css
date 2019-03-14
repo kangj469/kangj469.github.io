@@ -1,0 +1,60 @@
+header {
+  font-size: 2em;
+  text-align: center;
+}
+
+.weekdays {
+
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+.first, .second, .third, .fourth, .fifth, .sixth {
+  margin: 0;
+
+  text-align: center;
+}
+
+.dates {
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+}
+
+@media screen and (min-width:600px){
+  .first, .second, .third, .fourth, .fifth, .sixth 
+  {display: flex;
+  justify-content: space-around;}
+
+  .dates {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .dates {
+    width: 350px;
+    text-align: left
+  }
+
+  .weekdays {
+    display: none;
+  }
+
+  #none {
+    display: none;
+  }
+
+  header {
+    font-size: 1em;
+    text-align: left;
+  }
+
+
+
+
