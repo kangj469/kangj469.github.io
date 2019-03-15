@@ -1,0 +1,11 @@
+.pic {
+  width: 200px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+body {
+  background-color: #ccc;
+  margin: 10% 5% 10% 5%;
+}
