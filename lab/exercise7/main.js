@@ -2,8 +2,8 @@ console.log('hello world');
 
 var $sound = $("<audio preload=auto>");
      $sound.attr("src",
-        "https://www.kasandbox.org/programming-sounds/rpg/door-open.mp3");
-        $("#leafers").on("click", function(event) {
+        "https://www.kasandbox.org/programming-sounds/rpg/coin-jingle.mp3");
+        $("html").on("click", function(event) {
             // Do something!
          $("body").append($sound);
         $sound[0].play();})
