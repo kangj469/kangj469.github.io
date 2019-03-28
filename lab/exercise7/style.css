@@ -53,7 +53,6 @@ body {
   position: relative;
   display: block;
   margin: 250px;
-  transform: scale(-2);
 }
 
 .subject:hover {
@@ -104,3 +103,45 @@ body {
         transform:rotate(360deg);
     }
 }
+
+/*jquery*/
+
+    .star {
+      margin: 50px 0;
+      position: relative;
+      display: block;
+      color: yellow;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid yellow;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg);
+    }
+    .star:before {
+      border-bottom: 80px solid yellow;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    .star:after {
+      position: absolute;
+      display: block;
+      color: yellow;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid yellow;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
