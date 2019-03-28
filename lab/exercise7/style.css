@@ -53,16 +53,13 @@ body {
   position: relative;
   display: block;
   margin: 250px;
+  transform: scale(-2);
 }
 
 .subject:hover {
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  transform: scale(2);
-
   -webkit-transition: 1s ease-in-out;
-  -moz-transform: 1s ease-in-out;
-  transform: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 
   -webkit-animation-name: spin;
   -webkit-animation-duration: 5000ms;
