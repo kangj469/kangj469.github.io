@@ -1,5 +1,9 @@
 /*setting*/
 
+html {
+  margin-bottom: 10em;
+}
+
 body {
   font-family: ibm-plex-mono, sans-serif;
   color: #453423;
@@ -108,7 +112,7 @@ body {
 /*content*/
 
 .recipe {
-  font-size: 1.5em;
+  font-size: calc(1vw + 1vh + 1vmin);
   padding-top: 250px;
   padding-right: 27%;
   padding-left:27%;
@@ -169,3 +173,41 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
+
+/*media query*/
+
+@media (max-width: 500px) {
+
+   .nextround {
+  font-size: 2em;
+  background-color: transparent;
+  color: white;
+  border-radius: 10%;
+  position: fixed;
+  text-decoration: none;
+  padding: 0px 10px 10px 10px;
+  top: 50%;
+  right: 0;
+}
+
+.prevround {
+  font-size: 2em;
+  background-color: transparent;
+  color: white;
+  border-radius: 10%;
+  position: fixed;
+  text-decoration: none;
+  padding: 0px 10px 10px 10px;
+  top: 50%;
+  left: 0;
+  z-index: 10;
+}
+
+.nextprev a:hover {
+  color: #40382B;
+}
+
+}
+
+
