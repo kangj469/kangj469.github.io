@@ -8,7 +8,7 @@ console.log(myName);
 var myAge = 20;
 console.log(myAge);
 
-var myBirthday = "My birthday is September 3rd";
+var myBirthday = "My birthday is September 3rd.";
 console.log(myBirthday);
 
 var admin = false;
@@ -40,9 +40,9 @@ console.log(currentTime + time);
 var currentHour = new Date().getHours();
 
 if (currentHour == 11) {
-  console.log("It is 11 now")
+  console.log("It is 11 now.")
 } else {
-  console.log("It is not 11 yet")
+  console.log("It is not 11 yet.")
 };
 
 /* 8 */
