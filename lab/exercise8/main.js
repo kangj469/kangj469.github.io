@@ -36,7 +36,7 @@ if (currenHour = 11) {
 
 /* 8 */
 console.log (myName.length);
-myName = myName[3-1];
+myName = myName.length - 1;
 
 if (myName <= 9) {
   console.log("My name is relatively short.")
