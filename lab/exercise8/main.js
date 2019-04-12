@@ -57,6 +57,42 @@ if (myName <= 9) {
   console.log("My name is neither short nor long.")
 };
 
+/* 9 */
+var newyorkTemp = fToCNY(48);
+
+function fToCNY(fahrenheit) {
+  var fTemp = fahrenheit;
+  var fToCel = (fTemp - 32) * 5 / 9;
+
+  var message = "The temperature in New York City is " + fToCel + "\xB0C at 10:30.";
+    console.log(message);}
 
 
+var londonTemp = fToCLD(41);
 
+  function fToCLD(fahrenheit) {
+    var fTemp = fahrenheit;
+    var fToCel = (fTemp - 32) * 5 / 9;
+
+    var message = "The temperature in London is " + fToCel + "\xB0C at 10:30.";
+      console.log(message);}
+
+/* 10 */
+
+for (j = 0; j < 100; j++) {
+
+  for (i = 0; i < 20; i++) {
+
+    if (i == 5) {
+      $('.wrapper').append('<div class="rect" style="border-radius:20px;"></div>');
+    } else if (i > 7) {
+      $('.wrapper').append('<div class="rect" style="background-color:hsl(' + i * j + ',100%,50%)"></div>');
+    } else {
+      $('.wrapper').append('<div class="rect"></div>');
+    }
+
+  }
+
+  $('.wrapper').append('<div class="clear"></div>');
+
+}
