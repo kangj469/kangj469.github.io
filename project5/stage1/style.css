@@ -14,8 +14,6 @@ p {
   font-weight: 300;
   font-size: 4vw;
   color: white;
-  display: flex;
-  justify-content: center;
 }
 
 p:hover {
