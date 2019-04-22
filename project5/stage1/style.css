@@ -1,0 +1,23 @@
+html {
+  background-color: #568FE8;
+}
+
+h1 {
+  font-family: cronos-pro, sans-serif;
+  font-weight: 700;
+  font-size: 7vw;
+  color: #011C3C;
+}
+
+p {
+  font-family: cronos-pro, sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+p:hover {
+  color: yellow;
+}

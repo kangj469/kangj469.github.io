@@ -77,6 +77,22 @@ var londonTemp = fToCLD(41);
     var message = "The temperature in London is " + fToCel + "\xB0C at 10:30.";
       console.log(message);}
 
+/* other method 
+
+console.log(response);
+
+var newyorkTemp = 48;
+var londonTemp = 41;
+
+var equation = function(num) {
+  return (num - 32) * (5/9);
+}
+
+console.log("The temperature in New York City is " + (equation(newyorkTemp)) + "\xB0C")
+console.log("The temperature in London is " + (equation(londonTemp)) + "\xB0C")
+
+* /
+
 /* 10 */
 
 for (j = 0; j < 100; j++) {
