@@ -1,7 +1,7 @@
 $(function() {
   console.log('hello');
 
-var url = 'http://api.openweathermap.org/data/2.5/weather?id=519188&units=metric&APPID=8eb63a37b21bd02ccf7fcbf3494ffb5c'
+var url = 'https://api.openweathermap.org/data/2.5/weather?id=519188&units=metric&APPID=8eb63a37b21bd02ccf7fcbf3494ffb5c'
 
   $.get(url, function(data) {
 
