@@ -1,8 +1,20 @@
 #circle {
-  float: left;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #000;
-  margin: 10px;
+}
+
+#stroke {
+  width: 10px;
+  height: 100px;
+  background-color: #000;
+}
+
+#triangle {
+width: 100px;
+height: 100px;
+background: #000;
+    /* The points are: centered top, left bottom, right bottom */
+clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
