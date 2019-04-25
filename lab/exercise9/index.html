@@ -15,15 +15,90 @@
   <script src="jquery-3.3.1.min.js"></script>
 </head>
 
-<body onload="clock()">
-
-  <div class="one"> </div>
-  <div class="two"> </div>
-  <div class="three"> </div>
-  <div class="four"> </div>
+<body id="body" onload="clock()">
 
   <p id="time"></p>
 
+  <div id="follower">
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+  </div>
+
 </body>
+
+<script>
+
+  //background color change
+
+    if (new Date().getHours() <= 4) {
+  document.getElementById("body").style.backgroundColor = '#3E332C';
+}
+  else if (new Date().getHours() <= 8) {
+  document.getElementById("body").style.backgroundColor = '#5F76FF';
+  document.getElementById("circle1").style.backgroundColor = '#FFE3AA';
+  document.getElementById("circle2").style.backgroundColor = '#DD4230';
+}
+  else if (new Date().getHours() <= 12) {
+  document.getElementById("body").style.backgroundColor = '#8CBBFF';
+  document.getElementById("circle1").style.backgroundColor = '#D30030';
+  document.getElementById("circle2").style.backgroundColor = '#E8DA42';
+}
+  else if (new Date().getHours() <= 16) {
+  document.getElementById("body").style.backgroundColor = '#FFD65A';
+  document.getElementById("circle1").style.backgroundColor = '#D45B00';
+  document.getElementById("circle2").style.backgroundColor = '#E84D42';
+}
+  else if (new Date().getHours() <= 20) {
+  document.getElementById("body").style.backgroundColor = '#FF523E';
+  document.getElementById("circle1").style.backgroundColor = '#E8B941';
+  document.getElementById("circle2").style.backgroundColor = '#F98E00';
+}
+  else if (new Date().getHours() <= 24) {
+  document.getElementById("body").style.backgroundColor = '#323042';
+  document.getElementById("circle1").style.backgroundColor = '#E3EBCB';
+  document.getElementById("circle2").style.backgroundColor = '#E3EB81';
+}
+
+//sun mouse function 
+
+  (function() {
+  var follower, init, mouseX, mouseY, positionElement, printout, timer;
+
+  follower = document.getElementById('follower');
+
+  printout = document.getElementById('printout');
+
+  mouseX = (event) => {
+    return event.clientX;
+  };
+
+  mouseY = (event) => {
+    return event.clientY;
+  };
+
+  positionElement = (event) => {
+    var mouse;
+    mouse = {
+      x: mouseX(event),
+      y: mouseY(event)
+    };
+    follower.style.top = mouse.y + 'px';
+    return follower.style.left = mouse.x + 'px';
+  };
+
+  timer = false;
+
+  window.onmousemove = init = (event) => {
+    var _event;
+    _event = event;
+    return timer = setTimeout(() => {
+      return positionElement(_event);
+    }, 1);
+  };
+
+}).call(this);
+
+
+</script>
 
 </html>

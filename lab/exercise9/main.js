@@ -1,6 +1,5 @@
 console.log('hello world');
 
-
 /*current time*/
 
 function clock() {
@@ -33,3 +32,6 @@ else {
 }
 var timeout = setTimeout(clock,1000);
 }
+
+
+
