@@ -18,12 +18,72 @@
 </head>
 <body>
 
+<div id="wrapper">
+
 <div id="circle" class="humidity cloudiness"> </div>
 
 <div id="stroke" class="windspeed weathertext"></div>
 
 <div id="triangle" class="pressure winddeg"></div>
 
+</div>
+
+<!-- drag -->
+  <script type="text/javascript">
+    let currentDroppable = null;
+
+    circle.onmousedown = function(event) {
+
+      let shiftX = event.clientX - circle.getBoundingClientRect().left;
+      let shiftY = event.clientY - circle.getBoundingClientRect().top;
+
+      circle.style.position = 'absolute';
+      circle.style.zIndex = 100;
+      document.body.append(circle);
+
+      moveAt(event.pageX, event.pageY);
+
+      function moveAt(pageX, pageY) {
+        circle.style.left = pageX - shiftX + 'px';
+        circle.style.top = pageY - shiftY + 'px';
+      }
+
+      function onMouseMove(event) {
+        moveAt(event.pageX, event.pageY);
+
+        circle.hidden = true;
+        let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
+        circle.hidden = false;
+
+        if (!elemBelow) return;
+
+        let droppableBelow = elemBelow.closest('.droppable');
+        if (currentDroppable != droppableBelow) {
+          if (currentDroppable) { // null when we were not over a droppable before this event
+            leaveDroppable(currentDroppable);
+          }
+          currentDroppable = droppableBelow;
+          if (currentDroppable) { // null if we're not coming over a droppable now
+            // (maybe just left the droppable)
+            enterDroppable(currentDroppable);
+          }
+        }
+      }
+
+      document.addEventListener('mousemove', onMouseMove);
+
+      circle.onmouseup = function() {
+        document.removeEventListener('mousemove', onMouseMove);
+        circle.onmouseup = null;
+      };
+
+    };
+
+    circle.ondragstart = function() {
+      return false;
+    };
+   
+  </script>
 
 </body>
 </html>

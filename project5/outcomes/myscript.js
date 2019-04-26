@@ -70,42 +70,41 @@ var url = 'https://api.openweathermap.org/data/2.5/weather?id=519188&units=metri
     if (weathertext = "clear") {
         $('.weathertext').css("height","150px");
     }
-    else if (windspeed = "clouds") {
+    else if (weathertext = "clouds") {
         $('.weathertext').css("height","100px");
     }
     else if (weathertext = "rain, snow" ) {
         $('.weathertext').css("height","50px");
     }
-  });
 
 
 //traingle
     var pressure = data.main.pressure;
     console.log('pressure',pressure);
 
-    if (pressure < 5) {
-        $('.pressure').css("","");
+    if (pressure < 1000) {
+        $('.pressure').css("width","80px");
     }
-    else if (pressure >= 5) {
-        $('.pressure').css("","");
+    else if (pressure >= 1000) {
+        $('.pressure').css("width","120px");
     }
-    else if (pressure >= 2 & windspeed <= 5) {
-        $('.pressure').css("","");
+    else if (pressure >= 800 & windspeed <= 1000) {
+        $('.pressure').css("width","500px");
     }
 
 
-    var weathertext = data..main;
-    console.log('weathertext',weathertext);
+    var winddeg = data.wind.deg;
+    console.log('winddeg',winddeg);
 
-    if (weathertext = "clear") {
-        $('.weathertext').css("height","150px");
+    if (winddeg < 60) {
+        $('.winddeg').css("transform","rotate(50deg)");
     }
-    else if (windspeed = "clouds") {
-        $('weathertext').css("height","100px");
+    else if (winddeg < 100) {
+        $('winddeg').css("transform","rotate(90deg)");
     }
-    else if (weathertext = "rain, snow" ) {
-        $('.weathertext').css("height","50px");
+    else if (winddeg < 160) {
+        $('.winddeg').css("transform","rotate(140deg)");
     }
-  });
 });
+  });
 
