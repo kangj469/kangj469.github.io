@@ -1,5 +1,5 @@
 $(function() {
-  console.log('hello');
+  console.log('by Juyeon Kang');
 
 var url = 'https://api.openweathermap.org/data/2.5/weather?id=519188&units=metric&APPID=8eb63a37b21bd02ccf7fcbf3494ffb5c'
 
@@ -57,7 +57,7 @@ var url = 'https://api.openweathermap.org/data/2.5/weather?id=519188&units=metri
         $('.windspeed').css("transform","rotate(45deg)");
     }
     else if (windspeed >= 5) {
-        $('windspeed').css("transform","rotate(90deg)");
+        $('.windspeed').css("transform","rotate(90deg)");
     }
     else if (windspeed >= 2 & windspeed <= 5) {
         $('.windspeed').css("transform","rotate(135deg)");
@@ -70,14 +70,42 @@ var url = 'https://api.openweathermap.org/data/2.5/weather?id=519188&units=metri
     if (weathertext = "clear") {
         $('.weathertext').css("height","150px");
     }
-    else if (windspeed >= 5) {
-        $('weathertext').css("transform","rotate(90deg)");
+    else if (windspeed = "clouds") {
+        $('.weathertext').css("height","100px");
     }
-    else if (windspeed >= 2 & windspeed <= 5) {
-        $('.weathertext').css("transform","rotate(135deg)");
+    else if (weathertext = "rain, snow" ) {
+        $('.weathertext').css("height","50px");
     }
   });
 
 
+//traingle
+    var pressure = data.main.pressure;
+    console.log('pressure',pressure);
+
+    if (pressure < 5) {
+        $('.pressure').css("","");
+    }
+    else if (pressure >= 5) {
+        $('.pressure').css("","");
+    }
+    else if (pressure >= 2 & windspeed <= 5) {
+        $('.pressure').css("","");
+    }
+
+
+    var weathertext = data..main;
+    console.log('weathertext',weathertext);
+
+    if (weathertext = "clear") {
+        $('.weathertext').css("height","150px");
+    }
+    else if (windspeed = "clouds") {
+        $('weathertext').css("height","100px");
+    }
+    else if (weathertext = "rain, snow" ) {
+        $('.weathertext').css("height","50px");
+    }
+  });
 });
 
