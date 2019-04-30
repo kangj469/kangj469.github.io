@@ -54,13 +54,13 @@ var url = 'https://api.openweathermap.org/data/2.5/weather?id=519188&units=metri
     console.log('windspeed',windspeed);
 
     if (windspeed < 5) {
-        $('.windspeed').css("transform","rotate(45deg)");
+        $('.windspeed').css("width","5px");
     }
     else if (windspeed >= 5) {
-        $('.windspeed').css("transform","rotate(90deg)");
+        $('.windspeed').css("width","10px");
     }
     else if (windspeed >= 2 & windspeed <= 5) {
-        $('.windspeed').css("transform","rotate(135deg)");
+        $('.windspeed').css("width","15px");
     }
 
 

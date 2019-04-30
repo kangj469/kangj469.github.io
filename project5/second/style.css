@@ -1,0 +1,46 @@
+
+
+.wrapper {
+  width: calc(30vw + 30vh + 5vmin);
+  height: calc(30vw + 30vh + 5vmin);
+  margin: 0 auto;
+  border: calc(1.5vw + 1.5vh + 1vmin) solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#circle {
+  width: 100px;
+  height: 100px;
+  border : solid 5px rgba(0,0,0,1);
+  border-radius: 50%;
+}
+
+.temperature {
+ background-color: red;
+}
+
+.humidity {
+ background-color: yellow;
+}
+
+.cloudiness {
+ background-color: blue;
+}
+
+.weathertext {
+ background-color: green;
+}
+
+#stroke {
+  width: 5px;
+  height: 200px;
+}
+
+.windspeed {
+  background-color: black;
+}
+
+.winddeg {
+  background-color: black;
+}

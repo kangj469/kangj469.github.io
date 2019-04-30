@@ -82,6 +82,58 @@
     circle.ondragstart = function() {
       return false;
     };
+
+    //
+      stroke.onmousedown = function(event) {
+
+      let shiftX = event.clientX - stroke.getBoundingClientRect().left;
+      let shiftY = event.clientY - stroke.getBoundingClientRect().top;
+
+      stroke.style.position = 'absolute';
+      stroke.style.zIndex = 100;
+      document.body.append(stroke);
+
+      moveAt(event.pageX, event.pageY);
+
+      function moveAt(pageX, pageY) {
+        stroke.style.left = pageX - shiftX + 'px';
+        stroke.style.top = pageY - shiftY + 'px';
+      }
+
+      function onMouseMove(event) {
+        moveAt(event.pageX, event.pageY);
+
+        circle.hidden = true;
+        let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
+        stroke.hidden = false;
+
+        if (!elemBelow) return;
+
+        let droppableBelow = elemBelow.closest('.droppable');
+        if (currentDroppable != droppableBelow) {
+          if (currentDroppable) { // null when we were not over a droppable before this event
+            leaveDroppable(currentDroppable);
+          }
+          currentDroppable = droppableBelow;
+          if (currentDroppable) { // null if we're not coming over a droppable now
+            // (maybe just left the droppable)
+            enterDroppable(currentDroppable);
+          }
+        }
+      }
+
+      document.addEventListener('mousemove', onMouseMove);
+
+      stroke.onmouseup = function() {
+        document.removeEventListener('mousemove', onMouseMove);
+        stroke.onmouseup = null;
+      };
+
+    };
+
+    stroke.ondragstart = function() {
+      return false;
+    };
    
   </script>
 
