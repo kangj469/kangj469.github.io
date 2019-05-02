@@ -1,12 +1,12 @@
 
 
 .wrapper {
-  width: calc(30vw + 30vh + 5vmin);
+  /*width: calc(30vw + 30vh + 5vmin);
   height: calc(30vw + 30vh + 5vmin);
   margin: 0 auto;
   border: calc(1.5vw + 1.5vh + 1vmin) solid black;
-  border-radius: 50%;
-  overflow: hidden;
+  border-radius: %;
+  overflow: hidden;*/
 }
 
 #circle {
@@ -17,30 +17,28 @@
 }
 
 .temperature {
- background-color: red;
+ background-color: rgb(255,0,0) /*red*/
 }
 
 .humidity {
- background-color: yellow;
+ background-color: rgb(255,255,0) /*yellow*/
 }
 
 .cloudiness {
- background-color: blue;
+ background-color: rgb(0,0,255); /*blue*/
 }
 
 .weathertext {
- background-color: green;
+ background-color: rgb(0,153,0); /*green*/
+}
+
+.pressure {
+  background-color: rgb(153,51,225); /*purple*/
 }
 
 #stroke {
-  width: 5px;
+  width: 8px;
   height: 200px;
-}
-
-.windspeed {
   background-color: black;
 }
 
-.winddeg {
-  background-color: black;
-}

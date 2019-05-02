@@ -5,17 +5,21 @@ html {
 h1 {
   font-family: cronos-pro, sans-serif;
   font-weight: 700;
-  font-size: 7vw;
+  font-size: 3em;
   color: #011C3C;
 }
 
 p {
   font-family: cronos-pro, sans-serif;
   font-weight: 300;
-  font-size: 4vw;
+  font-size: 2em;
   color: white;
 }
 
 p:hover {
   color: yellow;
+}
+
+div {
+  display: inline-block;
 }

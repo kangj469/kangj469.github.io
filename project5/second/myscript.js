@@ -65,6 +65,20 @@ console.log(name);
         $('.weathertext').css("background-color","rgba(0,153,0,1)");
     }
 
+    var pressure = data.main.pressure;
+    console.log('pressure:',pressure);
+
+    if (pressure < 1000 ) {
+        $('.pressure').css("background-color","rgba(153,51,225,0.6)");
+    }
+    else if (pressure < 1010 ) {
+        $('.pressure').css("background-color","rgba(153,51,225,0.8)");
+    }
+    else if (pressure <1020 ) {
+        $('.pressure').css("background-color","rgba(153,51,225,1)");
+    }
+
+
 
 //stroke
 
@@ -88,14 +102,40 @@ console.log(name);
         $('.winddeg').css("transform","rotate(50deg)");
     }
     else if (winddeg < 100) {
-        $('winddeg').css("transform","rotate(90deg)");
+        $('.winddeg').css("transform","rotate(90deg)");
     }
     else if (winddeg < 160) {
         $('.winddeg').css("transform","rotate(140deg)");
     }
+
+    var tempmin = data.main.temp_min;
+    console.log('tempmin:',tempmin);
+
+    if (tempmin < 20) {
+        $('.tempmin').css("transform","rotate(50deg)");
+    }
+    else if (tempmin < 25) {
+        $('.tempmin').css("transform","rotate(90deg)");
+    }
+    else if (winddeg < 30) {
+        $('.tempmin').css("transform","rotate(140deg)");
+    }
+
+    var tempmax = data.main.temp_max;
+    console.log('tempmax:',tempmax);
+
+    if (tempmax < 20) {
+        $('.tempmax').css("transform","rotate(50deg)");
+    }
+    else if (tempmax < 25) {
+        $('.tempmax').css("transform","rotate(90deg)");
+    }
+    else if (tempmax < 30) {
+        $('.tempmax').css("transform","rotate(140deg)");
+    }
 });
   });
 
-//drag&resize
+
 
 
