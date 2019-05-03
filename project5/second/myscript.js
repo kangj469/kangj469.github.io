@@ -16,26 +16,37 @@ console.log(name);
     console.log('temperature:',temperature);
 
     if (temperature < 20) {
-        $('.temperature').css("background-color","rgba(255,0,0,0.6)");
+        $('.temperature').css("width", "200px").css("height","200px");
     }
     else if (temperature >= 20) {
-        $('.temperature').css("background-color","rgba(255,0,0,0.8)");
+        $('.temperature').css("width", "250px").css("height","250px");
     }
     else if (temperature >= 10 & temperature <= 20) {
-        $('.temperature').css("background-color","rgba(255,0,0,1)");
-    }
+        $('.temperature').css("width","150px").css("height","150px");
+    } 
+
+//trial
+  /*  var temperature = data.main.temp;
+    console.log('temperature:',temperature);
+
+    var output = temperature * 5;
+    console.log(output);
+
+    $('.temperature').append('<div class="temperature" style="width: 'output' px"></div>'); */
+//trial
+
 
     var humidity = data.main.humidity;
     console.log('humidity:',humidity);
 
     if (humidity < 50) {
-        $('.humidity').css("background-color","rgba(255,255,0,0.6)");
+        $('.humidity').css("width", "200px").css("height","200px");
     }
     else if (humidity >= 50) {
-        $('.humidity').css("background-color","rgba(255,255,0,0.8)");
+        $('.humidity').css("width", "250px").css("height","250px");
     }
     else if (humidity >= 40 & humidity <= 50) {
-        $('.humidity').css("background-color","rgba(255,255,0,1)");
+        $('.humidity').css("width", "150px").css("height","150px");
     }
 
 
@@ -43,39 +54,39 @@ console.log(name);
     console.log('cloudiness:',cloudiness);
 
     if (cloudiness < 10) {
-        $('.cloudiness').css("background-color","rgba(0,0,255,0.6)");
+        $('.cloudiness').css("width", "200px").css("height","200px");
     }
     else if (cloudiness >= 10) {
-        $('.cloudiness').css("background-color","rgba(0,0,255,0.8)");
+        $('.cloudiness').css("width", "250px").css("height","250px");
     }
     else if (cloudiness >= 5 & cloudiness <= 10) {
-        $('.cloudiness').css("background-color","rgba(0,0,255,1)");
+        $('.cloudiness').css("width", "150px").css("height","150px");
     }
 
     var weathertext = data.weather[0].main;
     console.log('weathertext:',weathertext);
 
     if (weathertext = "clear") {
-        $('.weathertext').css("background-color","rgba(0,153,0,0.6)");
+        $('.weathertext').css("width", "200px").css("height","200px");
     }
     else if (weathertext = "clouds") {
-        $('.weathertext').css("background-color","rgba(0,153,0,0.8)");
+        $('.weathertext').css("width", "250px").css("height","250px");
     }
     else if (weathertext = "rain, snow" ) {
-        $('.weathertext').css("background-color","rgba(0,153,0,1)");
+        $('.weathertext').css("width", "150px").css("height","150px");
     }
 
     var pressure = data.main.pressure;
     console.log('pressure:',pressure);
 
     if (pressure < 1000 ) {
-        $('.pressure').css("background-color","rgba(153,51,225,0.6)");
+        $('.pressure').css("width", "200px").css("height","200px");
     }
     else if (pressure < 1010 ) {
-        $('.pressure').css("background-color","rgba(153,51,225,0.8)");
+        $('.pressure').css("width", "250px").css("height","250px");
     }
     else if (pressure <1020 ) {
-        $('.pressure').css("background-color","rgba(153,51,225,1)");
+        $('.pressure').css("width", "150px").css("height","150px");
     }
 
 
@@ -134,7 +145,15 @@ console.log(name);
         $('.tempmax').css("transform","rotate(140deg)");
     }
 });
+
+
+//draggable & resizable 
+
+  $("#circle,#stroke").each(function() {
+    $(this).draggable();
   });
+
+});
 
 
 

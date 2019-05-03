@@ -1,44 +1,46 @@
 
 
 .wrapper {
-  /*width: calc(30vw + 30vh + 5vmin);
+  width: calc(30vw + 30vh + 5vmin);
   height: calc(30vw + 30vh + 5vmin);
   margin: 0 auto;
   border: calc(1.5vw + 1.5vh + 1vmin) solid black;
   border-radius: %;
-  overflow: hidden;*/
+  overflow: ;
 }
 
 #circle {
-  width: 100px;
-  height: 100px;
-  border : solid 5px rgba(0,0,0,1);
+  width: 30%;
+  height: 30%;
+  border : solid 3px rgba(0,0,0,0.7);
   border-radius: 50%;
+  cursor: grab;
 }
 
 .temperature {
- background-color: rgb(255,0,0) /*red*/
+ background-color: rgba(255,0,0,0.7) /*red*/
 }
 
 .humidity {
- background-color: rgb(255,255,0) /*yellow*/
+ background-color: rgba(255,255,0,0.7) /*yellow*/
 }
 
 .cloudiness {
- background-color: rgb(0,0,255); /*blue*/
+ background-color: rgba(0,0,255,0.7); /*blue*/
 }
 
 .weathertext {
- background-color: rgb(0,153,0); /*green*/
+ background-color: rgba(0,153,0,0.7); /*green*/
 }
 
 .pressure {
-  background-color: rgb(153,51,225); /*purple*/
+  background-color: rgba(153,51,225,0.7); /*purple*/
 }
 
 #stroke {
   width: 8px;
   height: 200px;
   background-color: black;
+  cursor: grab;
 }
 
