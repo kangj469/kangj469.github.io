@@ -1,11 +1,11 @@
 
 
 .wrapper {
-  width: calc(30vw + 30vh + 5vmin);
-  height: calc(30vw + 30vh + 5vmin);
+  width: calc(40vw + 40vh + 5vmin);
+  height: calc(40vw + 40vh + 5vmin);
   margin: 0 auto;
   border: calc(1.5vw + 1.5vh + 1vmin) solid black;
-  border-radius: %;
+  border-radius: 50%;
   overflow: ;
 }
 
