@@ -1,6 +1,47 @@
 $(function() {
   console.log('Juyeon X Kandinsky Weather');
 
+
+
+//footer
+
+function getval() {
+    var currentTime = new Date()
+    var hours = currentTime.getHours()
+    var minutes = currentTime.getMinutes()
+
+        if (minutes < 10)
+            minutes = "0" + minutes;
+
+    var suffix = "AM";
+        if (hours >= 12) {
+            suffix = "PM";
+            hours = hours - 12;
+        }
+        if (hours == 0) {
+            hours = 12;
+        }
+    var current_time = hours + ":" + minutes + " " + suffix;
+            
+        $(".time").append(current_time);
+        }
+
+$(".time").append(getval);
+
+Date.prototype.yyyymmdd = function() {
+  var yyyy = this.getFullYear().toString();
+  var mm = (this.getMonth()+1).toString(); 
+  var dd  = this.getDate().toString();
+  return yyyy + (mm[1]?mm:"0"+mm[0]) + (dd[1]?dd:"0"+dd[0]); 
+};
+
+var date = new Date();
+$(".date").append( date.yyyymmdd() ); 
+
+
+
+//weather js
+
 var url = 'https://api.openweathermap.org/data/2.5/weather?id=5128581&units=metric&APPID=8eb63a37b21bd02ccf7fcbf3494ffb5c'
 
   $.get(url, function(data) {
