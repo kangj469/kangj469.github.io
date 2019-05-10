@@ -1,0 +1,239 @@
+/*header*/
+
+.home {
+  z-index: 2;
+  position: relative;
+  float: left;
+  padding: 10px;
+}
+
+.goback {
+  position: relative;
+  float: right;
+  padding: 10px 5px 0px 0px;
+  z-index: 2;
+}
+
+.key {
+  position: relative;
+  float: right;
+  padding: 10px 10px 0px 5px;
+  z-index: 2
+}
+
+.key .keytext {
+  font-family: fieldwork, sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  opacity: 0.7;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  right: 50%
+}
+
+.key:hover .keytext {
+  visibility: visible;
+}
+
+/*background streaks*/
+
+.streakone {
+  top: 0;
+  left: 50%;
+  border-bottom: 100vh solid rgba(225,0,0,0.7);
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  height: 0;
+  width: 10vw;
+  z-index: -100;
+  position: absolute;
+  transform: skew(40deg);
+}
+
+.streaktwo {
+  top: 0;
+  left: 50%;
+  border-bottom: 100vh solid rgba(0,0,225,0.7);
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  height: 0;
+  width: 10vw;
+  z-index: -50;
+  position: absolute;
+  transform: skew(-45deg);
+}
+
+/*big circle container*/
+
+.wrapper {
+  width: calc(25vw + 25vh + 5vmin);
+  height: calc(25vw + 25vh + 5vmin);
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: calc(1vw + 1vh + 1vmin) solid black;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+
+.wrapper {
+  width: 180px;
+  height: 180px;
+}
+}
+
+/*content*/
+
+#circle {
+  width: 30%;
+  height: 30%;
+  border : solid 3px rgba(0,0,0,0.8);
+  border-radius: 50%;
+  cursor: grab;
+  z-index: 2;
+  margin: auto;
+  position: absolute;
+}
+
+.newyorkcity {
+ background-color: rgba(255,0,0,0.7); /*red*/
+    width: 100px;
+    height: 100px;
+
+}
+
+.chicago {
+ background-color: rgba(255,255,0,0.7); /*yellow*/
+    width: 150px;
+    height: 150px;
+}
+
+.houston {
+ background-color: rgba(0,0,0,0.7); /*black*/
+    width: 150px;
+    height: 150px;
+
+}
+
+.losangeles {
+ background-color: rgba(0,153,0,0.7); /*green*/
+    width: 150px;
+    height: 150px;
+
+}
+
+.philadelphia {
+  background-color: rgba(153,51,225,0.7); /*purple*/
+    width: 150px;
+    height: 150px;
+
+}
+
+#stroke {
+  background-color: black;
+  cursor: grab;
+  z-index: 2;
+  position: absolute;
+}
+
+.stone {
+  width: 1%;
+  height: 40%;
+}
+
+.sttwo {
+  width: 1%;
+  height: 70%;
+}
+
+.stthree {
+  width: 2%;
+  height: 40%;
+}
+
+.stfour {
+  width: 2%;
+  height: 20%;
+}
+
+.stfive {
+  width: 1%;
+  height: 45%;
+}
+
+
+
+/*footer*/
+
+.footer {
+  font-family: fieldwork, sans-serif;
+  font-weight: 100;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 13px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 5;
+  left:0;
+}
+
+.place {
+  font-family: fieldwork, sans-serif;
+  font-weight: 800;
+  font-size: 1em;
+  text-transform: uppercase;
+  min-width: 160px;
+  border: none;
+  background-color: transparent;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.countries {
+  text-align: center;
+  font-size: 0.8em;
+  display: none;
+  position: absolute;
+  background-color: rgba(255,255,255, 0.3);
+  min-width: 160px;
+  bottom: 37px;
+  z-index: 1;
+}
+
+.countries a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.countries a:hover {background-color: #f1f1f1;}
+
+.dropup:hover .countries {
+  display: block;
+}
+
+.dropup:hover .place {
+  background-color: #ccc;
+}

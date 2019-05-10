@@ -1,0 +1,25 @@
+html {
+  background-color: #568FE8;
+}
+
+h1 {
+  font-family: cronos-pro, sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: #011C3C;
+}
+
+p {
+  font-family: cronos-pro, sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: white;
+}
+
+p:hover {
+  color: yellow;
+}
+
+div {
+  display: inline-block;
+}
