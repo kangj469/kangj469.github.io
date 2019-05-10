@@ -215,7 +215,7 @@
   font-size: 0.8em;
   display: none;
   position: absolute;
-  background-color: rgba(255,255,255, 0.3);
+  background-color: rgba(255,255,255, 0.8);
   min-width: 160px;
   width: 222px;
   bottom: 37px;
@@ -229,7 +229,7 @@
   display: block;
 }
 
-.countries a:hover {background-color: #f1f1f1;}
+.countries a:hover {background-color: #E6E6E6;}
 
 .dropup:hover .countries {
   display: block;
